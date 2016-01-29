@@ -1,0 +1,42 @@
+---
+layout: default
+title: Cuddle Coats
+subtitle: Helping Wild Animals Go Home
+---
+<div class="row">
+	<div class="large-12 columns">
+		<div class="main-content">
+		<div class="header1">{{ page.subtitle }}</div>
+			<p>Cuddle Coats uses donated furs to offer comfort, warmth, and rehabilitation to injured and orphaned animals before their release into the wild. That's right, fur that was once brutally taken from animals can now be used as a source of care and compassion. </p>
+			<div class="row">
+	        	<div class="large-6 medium-6 columns">
+<div class="header4">Learn How It Works</div>	    		  
+<p><div class="main-image"><img src="/img/prepping-coats082014.jpg"><span class="caption">Prep session</span></div>We take something tragic and turn it into an opportunity for healing by giving furs, widely acknowledged to be cruel and out of fashion, back to animals who need them. Orphaned and injured animals gain comfort and solace in the furs while they are in captivity, and the furs help to minimize contact with humans, helping to improve their chances of survival when they are released back into the wild. <a href="/how-it-works">Learn about the process.</a></p> 
+<div class="header3">Why We Need Your Help</div>	
+<p>Our biggest challenge is raising funds to help pay for the shipping of the Cuddle Coats. Furs are heavy, and even though we painstakingly remove all of the linings, batting, buttons, and clasps, the pelts themselves still result in heavy boxes that are expensive to ship. You contributions will help us get Cuddle Coats to baby animals who need them to not only survive, but thrive in their rehab process. <a href="/donate">Donate Today!</a>
+</p>
+<div class="header5">Our Partners</div>
+<p><div class="main-image"><img src="/img/boxes-ready112013.jpg"><span class="caption">Boxes ready to be shipped to our partners</span></div>We provide furs at no cost to over fifty wildlife rehabilitation clinics and independent rehabbers across the United States and have taken in over 800 fur garments since our inception. We have heard time and again from donors that they are so relieved to have found a positive way to pass on their fur items and from rehabbers who have seen the furs able to comfort babies who were not soothed by terrycloth towels. <a href="/partners">View all of our partners.</a></p>
+<div class="header6">Donation Map</div>
+<p>This is a map of all of the locations in which we have received donations. Get your city on the map by sending us a coat! <a href="/donate">Donate your fur coat to Cuddle Coats!</a></p>
+<div class="iframe-wrapper">
+<iframe src="https://www.google.com/maps/d/embed?mid=z6rDeKrkVMhA.kYYB22YiWD-A" width="640" height="480"></iframe>
+</div>
+
+
+</div>
+
+<div class="large-6 medium-6 columns">
+	        	 <div class="header2">Meet The Animals</div>
+<p>Check out our gallery of animals enjoying the Cuddle Coats! Click on any of the pictures to start the gallery.</p>
+           <div id="mygallery">
+		{% for gallery in site.gallery_list %}
+		<a href="/img/gallery/{{ gallery.img }}" class="group1 cboxElement" title="{{ gallery.title }}"><img alt="{{ gallery.title }}" src="/img/gallery/{{ gallery.img }}"></a>
+		{% endfor %}
+           </div>
+           <div id="loadinggallery">Loading Gallery, please hang on for cuteness!</div>
+	        	</div>
+					    </div>
+	</div>
+      </div>
+    </div>
